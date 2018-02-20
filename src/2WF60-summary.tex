@@ -1,0 +1,38 @@
+%%
+%% Author: Thomas Schouten
+%% 20-2-2018
+%%
+
+% Less redundant output.
+\batchmode
+
+% Preamble
+\documentclass{report}
+
+% Packages
+\usepackage[en]{thomaspackage}
+
+\title{Summary of 2WF60 Graph Theory and Combinatorics}
+\author{Thomas Schouten}
+\date{\today}
+
+%\DeclareMathOperator{\d}{d}
+
+% Document
+\begin{document}
+
+    \maketitle
+    \tableofcontents
+
+    \chapter*{Graph Theory}\label{ch:graphTheory}
+
+    \section{Lecture 1}\label{sec:lecture1}
+
+    \begin{lemma}[Handshaking lemma]
+        For every graph $G=(V,E)$ the sum of all vertex degrees is even,
+        \[
+            \sum_{v \in V} \d(v) = 2|E|.
+        \]
+    \end{lemma}
+
+\end{document}
