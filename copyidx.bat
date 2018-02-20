@@ -1,0 +1,1 @@
+xcopy /s /y /i C:\Users\s156757\Dropbox\2WF60\2WF60-summary\auxil\2WF60-summary.idx C:\Users\s156757\Dropbox\2WF60\2WF60-summary\src\

@@ -1,0 +1,64 @@
+\begin{definition}
+    A graph $G$ is \indx{$k$-regular} if every vertex in $G$ has degree $k$.
+\end{definition}
+\begin{lemma}[Handshaking lemma]
+    For every graph $G=(V,E)$ the sum of all vertex degrees is even,
+    \[
+        \sum_{v \in V} \d(v) = 2|E|.
+    \]
+\end{lemma}
+\begin{corollary}
+    Every graph has an even number of vertices of odd degree.
+\end{corollary}
+\begin{theorem}
+    Let $G$ be a graph on $n$ vertices, then $G$ is complete if and only if $G$ is $(n-1)$-regular.
+\end{theorem}
+
+\begin{definition}
+    A graph $G=(V,E)$ is called \index{bipartite} if $V=V_1 \sup V_2$ with $V_1 \cap V_2 = \emptyset$ and
+    \[
+        E \subset \set{\set{v_1,v_2}\mid v_1 \in V_1,\ v_2 \in V_2}.
+    \]
+\end{definition}
+
+\begin{definition}
+    A graph is \indx{connected} if between every pair of vertices there exists a path.
+\end{definition}
+
+\begin{theorem}
+    For every connected graph $G=(V,E)$ it holds
+    \[
+        |E| \ge |V| - 1.
+    \]
+\end{theorem}
+
+\begin{definition}
+    $G'=(V',E')$ is a \indx{subgraph} of $G=(V,E)$ if $G'$ is a graph and $V' \subset V$ and $E' \subset E$.
+    If $V'=V$ then $G'$ is called a \indx{spanning subgraph}.
+\end{definition}
+
+\begin{definition}
+    A \indx{component} $G'$ of a graph $G$ is a maximal spanning subgraph, so $G'$ is a connected subgraph of $G$ and there exists no connected subgraph $G''$ of $G$ for which it holds that $G'$ is a subgraph of $G''$ and $G' \neq G''$.
+\end{definition}
+
+\begin{definition}
+    A \indx{forest} is a graph without circuits.
+    A \indx{tree} is a connected forest.
+\end{definition}
+
+\begin{theorem}
+    If $G$ is a graph on $n$ vertices then the following are equivalent.
+    \begin{enumerate}
+        \item $G$ is a tree.
+        \item $G$ has $n-1$ edges and is connected.
+        \item $G$ has $n-1$ edges and does not contain a circuit.
+        \item Between every pair of vertices in $G$ there is exactly one path.
+    \end{enumerate}
+\end{theorem}
+
+\begin{definition}
+    Two graphs $G=(V,E)$ and $G'=(V',E')$ are \indx{isomorphic} if there exists a bijection $f \: V \to V'$ such that for all $u,v \in V$:
+    \[
+        (u,v) \in E \iff (f(u),f(v)) \in E'.
+    \]
+\end{definition}
