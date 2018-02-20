@@ -18,9 +18,8 @@ deploy:
   provider: releases
   api_key:
     secure: YvPjsKIAixKUOL9WztWOxgrCrIZ0FzDezbq3VXzXkn9sNDJceXcfUpQ2g2So8LdO0/2urKr61CsXtsPB0x5rRJNgq3/Dh1SMo7dxScRYt/LDTcak+c4WuwhL68AHKSxI/q/whVLtTRt4WtM4JCdKmX8l0hELaqHVnaAdxQMrwg3RrUESR7A/DhZL4csKTd4BhMnKuip+9qFjH+9pCZ6ydIYDIZ+0rc/uQHow64l0OHxgul8GjqNzfMP9CZmXOevj0sQEXutLNl/cIMA9JbiFrq/pDmYqWox4TrT+6d2fT388QHWxgCwWshJpJ6bx0azSxZZeYQoD5Dw/qgDNf6KZUDXb78U5GI+7OHA2t8/IXk1RNV3FhwHSs1idUHsHQCSCFDmdUxILDDBxyBxJIlQyn+m30MQ7nulDMw5vewZy2zCFjd3zm+bqnE2aoxJc2wZbSqCSnjYFAeFKQZqj83zt5/y8+06BklvYf9y8vCqGgKHm7nnRKMWoM9aZ6f8ZzIMsJ1S3vMQ0zRTB0K+ZTwRfBFF7KVAP506X/nzu4yQkKP1R9r67mCoXw1jcYZ1bmntCUr/A7ZG69CuBNst/GaljyrjweStlUM1Bf4taWyUKi7NoiUULdx/w4CvaI3RAyWd98jhBXudrxCnmJuT/YSGKHrFBgRVIncOFdjUZkBajl70=
-  file:
-    - ./src/2WF60-summary.pdf
-    skip_cleanup: true
-    on:
-      tags: true
-      branch: master
+  file: ./src/2WF60-summary.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
