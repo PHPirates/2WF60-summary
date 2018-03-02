@@ -1,0 +1,133 @@
+\begin{definition}
+    A \indx{multi-graph} can have multiple edges between the same pair of vertices.
+    A \indx{simple graph} is a graph without multiple edges or loops.
+\end{definition}
+
+\begin{definition}
+    An \indx{Eulerian tour} is a closed walk that traverses every edge exactly once.
+\end{definition}
+
+\begin{definition}
+    A \indx{Hamilton circuit} is a circuit through every vertex.
+\end{definition}
+
+\begin{theorem}[Euler]
+    Let $G$ be a multigraph without vertices of degree 0.
+    Then
+    \[
+        \text{$G$ is an Eulerian graph} \iff \text{$G$ is connected and every vertex in $G$ has even degree.}
+    \]
+\end{theorem}
+
+\begin{theorem}[Dirac]
+    If $G$ is a graph on $n \ge 3$ vertices in which every degree is at least $\frac n 2$, then $G$ is a Hamilton graph.
+\end{theorem}
+
+\begin{problem}[Travelling Salesman Problem] (TSP)
+
+    \quad \textbf{Given} a complete graph $G=(V,E)$ and a cost function $c\: E \to \reals^+$
+
+    \quad \textbf{Find} a Hamilton circuit in $G$ of minimal cost.
+\end{problem}
+
+\begin{definition}
+    A \indx{$k$-colouring} of a graph $G=(V,E)$ is a function $f \: V \to \set{1,2,\dots,k}$ with the property that for every edge $(u,v) \in E$ it holds that $f(u) \neq f(v)$.
+\end{definition}
+
+\begin{definition}
+    The \indx{chromatic number} $\chi (G)$ is the smallest $k \in \naturals$ for which $G$ has a $k$-colouring.
+\end{definition}
+
+\begin{theorem}
+    Given a graph $G$, the following are equivalent:
+    \begin{enumerate}
+        \item $G$ is bipartite
+        \item $G$ is 2-colourable
+        \item $G$ does not contain circuits of odd length
+    \end{enumerate}
+\end{theorem}
+
+\begin{definition}
+    $\Delta (G)$ is the \indx{maximal degree} in the graph $G$.
+\end{definition}
+
+% When colouring, the bottleneck is with the point with mamximal degree: every connected point has to have another colour.
+\begin{theorem}[Brooks]
+    For every connected graph $G$ it holds that
+    \[
+        \chi (G) \le \Delta (G)
+    \]
+    unless $G$ is a complete graph or an odd circuit.
+\end{theorem}
+
+\begin{definition}
+    A \indx{clique} in a graph is a set of pairwise adjacent vertices.
+    The \indx{cliquenumber} $\omega (G)$ is the cardinality of the largest clique in $G$.
+\end{definition}
+
+% Embedded complete graphs have a chi equal to their size: lower bound for chi.
+\begin{theorem}
+    For every graph $G$ it holds that
+    \[
+        \omega (G) \le \chi(G).
+    \]
+\end{theorem}
+
+% A even cycle with possibly one arm...
+\begin{theorem}[Mycielski]
+    For every $k \in \naturals $ with $k \ge 2$ there exists a graph $G$ with $\omega(G) = 2$ and $\chi(G) = k$.
+\end{theorem}
+
+\begin{definition}
+    A \indx{coclique} is a set of pairwise non-adjacent vertices.
+\end{definition}
+
+\begin{definition}
+    A graph is \indx{planar} if it can be drawn in the plane without crossing edges.
+\end{definition}
+
+\begin{definition}
+    An \indx{embedding} is a drawing of a graph in the plane.
+\end{definition}
+
+\begin{definition}
+    A \indx{planar embedding} is an embedding such that edges of the graph do not cross.
+\end{definition}
+
+\begin{definition}
+    A planar embedding of a planar graph divides the plane into regions.
+    Such a region is called a \indx{face}.
+\end{definition}
+
+% zero dim - one dim + two dim = plane dim
+\begin{theorem}[Euler]
+    For a planar embedding of a connected planar graph with $n \ge 1$ verices, $m$ edges and $f$ faces it holds that
+    \[
+        n - m + f = 2.
+    \]
+\end{theorem}
+
+\begin{lemma}
+    If $G$ is a planar graph with $n$ vertices, $m \ge 2$ edges and $f$ faces then
+    \begin{enumerate}[label=(\roman*)]
+        \item $f \le \frac 2 3 m$,
+        \item $m \le 3n-6$,
+        \item there exists a vertex $v$ with $\d (v) \le 5$.
+    \end{enumerate}
+\end{lemma}
+
+\begin{definition}
+    A \indx{subdivision} of a graph $G$ is a graph $G'$ which can be attained from $G$ by replacing every edge $(u,v)$ by a path $(u, w_1, w_2, \dots, w_k, v)$ with $k \ge 0$.
+    (If $k=0$ then the edge does not change.)
+\end{definition}
+
+\begin{theorem}[Kuratowski]
+    A graph is planar if and only if $G$ has no subgraph that is a subdivision of $K_5$ or of $K_{3,3}$.
+\end{theorem}
+
+\begin{theorem}[Four color theorem]
+    For every planar graph $G$ it holds
+    \[
+        \chi(G) \le 4.
+    \]
+\end{theorem}

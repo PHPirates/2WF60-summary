@@ -1,5 +1,10 @@
 notifications:
   email: false
+
+before_install:
+  # Install makeindex, if you do not use an index you can remove this (also remove the extra makeindex call).
+  - sudo apt-get install texlive-binaries
+
 install:
 - export PATH="$HOME/miniconda/bin:$PATH"
 - if ! command -v conda > /dev/null; then wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -12,6 +17,8 @@ cache:
   - "$HOME/miniconda"
 script:
 - cd ./src/
+- tectonic ./2WF60-summary.tex
+- makeindex ./2WF60-summary.idx
 - tectonic ./2WF60-summary.tex --print
 - cd ../
 deploy:

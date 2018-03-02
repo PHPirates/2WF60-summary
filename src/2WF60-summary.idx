@@ -1,9 +1,24 @@
-\indexentry{$k$-regular|hyperpage}{3}
-\indexentry{bipartite|hyperpage}{3}
-\indexentry{connected|hyperpage}{3}
-\indexentry{subgraph|hyperpage}{3}
-\indexentry{spanning subgraph|hyperpage}{3}
-\indexentry{component|hyperpage}{3}
-\indexentry{forest|hyperpage}{3}
-\indexentry{tree|hyperpage}{3}
-\indexentry{isomorphic|hyperpage}{3}
+\indexentry{$k$-regular|hyperpage}{2}
+\indexentry{bipartite|hyperpage}{2}
+\indexentry{connected|hyperpage}{2}
+\indexentry{subgraph|hyperpage}{2}
+\indexentry{spanning subgraph|hyperpage}{2}
+\indexentry{component|hyperpage}{2}
+\indexentry{forest|hyperpage}{2}
+\indexentry{tree|hyperpage}{2}
+\indexentry{isomorphic|hyperpage}{2}
+\indexentry{multi-graph|hyperpage}{3}
+\indexentry{simple graph|hyperpage}{3}
+\indexentry{Eulerian tour|hyperpage}{3}
+\indexentry{Hamilton circuit|hyperpage}{3}
+\indexentry{$k$-colouring|hyperpage}{3}
+\indexentry{chromatic number|hyperpage}{3}
+\indexentry{maximal degree|hyperpage}{3}
+\indexentry{clique|hyperpage}{3}
+\indexentry{cliquenumber|hyperpage}{3}
+\indexentry{coclique|hyperpage}{3}
+\indexentry{planar|hyperpage}{3}
+\indexentry{embedding|hyperpage}{3}
+\indexentry{planar embedding|hyperpage}{3}
+\indexentry{face|hyperpage}{3}
+\indexentry{subdivision|hyperpage}{4}
